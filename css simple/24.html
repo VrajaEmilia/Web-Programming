@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes jump {
+    0% {top:0px}
+    50% {top:350px}
+    100% {top:0px;}
+}
+.ball{
+    position: relative;
+    animation:jump 2s infinite;
+    animation-play-state: paused;
+}
+.ball:hover {
+    animation-play-state: running;
+}
+</style>
+</head>
+
+    <body>
+        <div class="ball">
+        <svg height="200" width="200" id="ball">
+            <circle cx="100" cy="100" r="80" fill="rgb(196, 11, 97)"/>
+        </svg>
+        </div>
+    </body>
+</html>

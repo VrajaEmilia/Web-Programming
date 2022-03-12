@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.hl {
+  width: 200px;
+  height: 10px;
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(196, 11, 97), rgba(0, 0, 0, 0));
+    
+}
+
+div.vl{
+  width: 10px;
+  height: 200px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(196, 11, 97), rgba(0, 0, 0, 0));
+}
+#top {
+    top: 0px;
+    left: 0px;
+}
+
+#left {
+    top: -9px;
+    left: 0;
+}
+#right {
+    top: -210px;
+    left: 190px;
+}
+#bottom {
+    top: -220px;
+    left: 0px;
+}
+
+</style>
+</head>
+<body>
+<div class="hl" id="top"></div>
+<div class="vl" id="left"></div>
+<div class="vl" id="right"></div>
+<div class="hl" id="bottom"></div>
+</body>
+</html>
