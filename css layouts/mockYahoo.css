@@ -186,3 +186,19 @@ form.search input[type=text] {
     width: 150px;
     background-color: rgba(29, 100, 128, 0);
 }
+.text-container
+{
+    position:absolute;
+    left:70%;
+    top:355px;
+    background-color: rgba(143, 5, 90, 0);
+    width:20%;
+    height:100px;
+    text-align: center;
+    align-items: center;
+    display:flex; 
+    flex-direction: column;
+    font-family: 'YahooSans VF',YahooSans,'Helvetica Neue',Helvetica,Tahoma,Geneva,Arial,sans-serif;
+    color:grey;
+    font-size: 14px;
+}
