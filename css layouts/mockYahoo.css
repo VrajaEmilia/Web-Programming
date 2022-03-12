@@ -1,0 +1,111 @@
+.navbar-container{
+    display : flex; 
+    position: absolute;
+    width: 80%;
+    margin-top: 8px;
+    left: 40%;
+    align-items: center;
+    -webkit-transform: translate(-40%, 0%);
+    transform: translate(-40%, 0%);
+    align-items: center;
+}
+.yahoo-logo
+{
+  flex: 1;
+}
+form.search input[type=text] {
+    height: 40px;
+    width: 600px;
+    margin-left: 55px;
+    border: 1px solid #188fff;
+    border-radius: 4px 0 0 4px;
+    cursor: auto;
+  }
+  input:focus {
+    outline: 0;
+    border-color: rgba(82,168,236,.8);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(82 168 236 / 60%);
+}
+.search-button{
+    height: 44px;
+    width:110px;
+    background-color: #188fff;
+    background-image: url(./resurse/search\ icon.PNG);
+    background-position: center;
+    border: solid #188fff;
+    border-top-right-radius:4px;
+    border-bottom-right-radius :4px;
+    cursor: pointer;
+}
+
+.conectare-button {
+    margin-left: 150px;
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius :20px;
+    text-align: center;
+    border-color: #6001d2;
+    color: #6001d2;
+    border-radius: 14px;
+    border-width: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'YahooSans VF',YahooSans,'Helvetica Neue',Helvetica,Tahoma,Geneva,Arial,sans-serif;
+    cursor: pointer;
+}
+.conectare-button:hover
+{
+    transition:0.2s;
+    background-color: #6001d2;
+    color:white;
+}
+
+.mail-button{
+    margin-left: 30px;
+    height:40px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: transparent;
+    font-family: 'YahooSans VF',YahooSans,'Helvetica Neue',Helvetica,Tahoma,Geneva,Arial,sans-serif;
+    align-items:center;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+.mail-button:hover{
+    transition:0.2s;
+    opacity: 0.4;
+}
+.subiecte-container
+{
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    position:absolute;
+    margin-top: 70px;
+    left:125px;
+    width:800px;
+    height:40px;
+    background-color: rgba(0, 0, 255, 0);
+}
+.buton-mail2{
+    font-family: 'YahooSans VF',YahooSans,'Helvetica Neue',Helvetica,Tahoma,Geneva,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.buton-mail2:hover{
+    cursor:pointer;
+}
+.buton-subiect{
+    margin-left: 30px;
+    font-family: 'YahooSans VF',YahooSans,'Helvetica Neue',Helvetica,Tahoma,Geneva,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.buton-subiect:hover{
+    cursor:pointer
+}
