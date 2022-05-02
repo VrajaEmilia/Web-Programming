@@ -2,6 +2,12 @@ $(document).ready(function() {
     displayData();
 });
 
+
+function home()
+{
+    window.location.href = "http://localhost/lab7/main.php?page=1&category=";
+}
+
 function deleteUrl(url__)
 {
     $.ajax({
@@ -22,11 +28,12 @@ function getDetails(url__)
    $('#id').val(url__);
 
    $.post('update.php',{url:url__},function(data,status){
-       var urlId=JSON.parse(data);
-       $('#updateUrl').val(urlId.url);
-       $('#updateDescription').val(urlId.description);
-       $('#updateCategory').val(urlId.category);
+       var url=JSON.parse(data);
+       $('#updateUrl').val(url.url);
+       $('#updateDescription').val(url.description);
+       $('#updateCategory').val(url.category);
    })
+
 }
 
 function displayData(){
@@ -74,6 +81,7 @@ function addUrl(){
         success:function(data,status){
             //console.log(status);
             displayData();
+           $('#Modal').modal("hide");
         }
     })
 }

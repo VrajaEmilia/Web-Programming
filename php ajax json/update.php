@@ -15,7 +15,7 @@
         echo json_encode($response);
     }
     else{
-        $response['status']=200;
+     //   $response['status']=200;
         $response['message']="not found"; 
     }
 

@@ -13,8 +13,8 @@
            session_start();
             $_SESSION['username'] = $username;
 
-             header(Location: 'main.php');
-             header(Location: 'display.php');
+            // header(Location: 'main.php');
+            // header(Location: 'display.php');
              
         }
         else
