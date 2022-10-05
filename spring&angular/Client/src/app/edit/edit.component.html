@@ -1,0 +1,48 @@
+<div mat-dialog-content>
+  <h1>Edit URL</h1>
+  <div style="" class="example-form" fxFlexFill fxLayout="column">
+    <mat-form-field appearance="fill" class="invisible">
+      <mat-label>Document</mat-label>
+      <input matInput required [(ngModel)]="data.name">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="invisible">
+      <mat-label>Website</mat-label>
+      <input matInput required [(ngModel)]="data.website">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Keyword1</mat-label>
+      <input matInput required [(ngModel)]="data.k1">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Keyword2</mat-label>
+      <input matInput required [(ngModel)]="data.k2">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Keyword3</mat-label>
+      <input matInput required [(ngModel)]="data.k3">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Keyword4</mat-label>
+      <input matInput required [(ngModel)]="data.k4">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Keyword5</mat-label>
+      <input matInput required [(ngModel)]="data.k5">
+    </mat-form-field>
+
+    <!--
+    <input matInput [(ngModel)]="data.url" type="hidden" id="oldUrl">
+    -->
+  </div>
+  <div>
+    <input type="hidden" id="id">
+  </div>
+</div>
+<div mat-dialog-actions fxLayoutAlign="center">
+  <button mat-stroked-button color="primary" type="button" (click)="updateDoc()">
+    Update
+  </button>
+  <button mat-stroked-button color="primary" type="submit" (click)="close()">
+    Close
+  </button>
+</div>

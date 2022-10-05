@@ -1,0 +1,30 @@
+<mat-form-field appearance="fill">
+  <mat-label>username</mat-label>
+  <input matInput [(ngModel)]="username">
+</mat-form-field>
+<br>
+<mat-form-field appearance="fill">
+  <mat-label>journalName</mat-label>
+  <input matInput [(ngModel)]="journal">
+</mat-form-field>
+<br>
+<button mat-raised-button (click)="getArt()">GetArticles</button>
+<div *ngIf="get==1">
+  <li *ngFor="let art of articles; index as i;">{{i}}.[USERNAME:{{art.username}} || JOURNAL:{{art.journalName}} || SUMMARY:{{art.summary}} || DATE:{{art.date}}]
+    <br>
+    </li>
+</div>
+<br>
+<mat-label>Add new article:</mat-label>
+<br>
+<mat-form-field appearance="fill">
+  <mat-label>journalName</mat-label>
+  <input matInput [(ngModel)]="journalToAdd">
+</mat-form-field>
+<br>
+<mat-form-field appearance="fill">
+  <mat-label>Summary</mat-label>
+  <input matInput [(ngModel)]="summary">
+</mat-form-field>
+<br>
+<button mat-raised-button (click)="add()">Add</button>
